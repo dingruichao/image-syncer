@@ -38,5 +38,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://registry.k8s.io/ubuntu-slim:0.14 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/cloudnativehome/ubuntu-slim:0.14
+         skopeo copy docker://registry.k8s.io/ubuntu-slim:0.14 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/cloud-native-home/ubuntu-slim:0.14
          
