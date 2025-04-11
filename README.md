@@ -1,2 +1,2 @@
 # image-syncer
-Sync docker image to another registry
+Sync docker image to another registry.
