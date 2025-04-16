@@ -39,4 +39,9 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         skopeo copy docker://docker.io/nginx:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/nginx:latest
-        skopeo copy docker://registry.k8s.io/emitechnologies/weaviate:1.19.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/weaviate:1.19.0
+        skopeo copy docker://docker.io/langgenius/dify-plugin-daemon:0.0.6-local docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-plugin-daemon:0.0.6-local
+        skopeo copy docker://docker.io/langgenius/qdrant:v1.7.3 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/qdrant:v1.7.3
+        skopeo copy docker://docker.io/langgenius/dify-api:1.1.3 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-api:1.1.3
+        skopeo copy docker://docker.io/langgenius/dify-web:1.1.3 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-web:1.1.3
+        skopeo copy docker://docker.io/langgenius/dify-sandbox:0.2.11	 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-sandbox:0.2.11
+        skopeo copy docker://docker.io/ubuntu/squid:latest	 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/ubuntu-squid:latest
