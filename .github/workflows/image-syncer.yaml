@@ -38,5 +38,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-        skopeo copy docker://registry.k8s.io/langgenius/dify-api:1.0.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/langgenius/dify-api:1.0.0
-        skopeo copy docker://registry.k8s.io/langgenius/dify-web:1.0.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/langgenius/dify-web:1.0.0
+        skopeo copy docker://registry.k8s.io/langgenius/dify-api:1.0.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-api:1.0.0
+        skopeo copy docker://registry.k8s.io/langgenius/dify-web:1.0.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-web:1.0.0
