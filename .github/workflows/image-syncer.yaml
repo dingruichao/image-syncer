@@ -38,7 +38,7 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-        skopeo copy docker://docker.io/postgres:15-alpine  docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/postgres:15-alpine 
+        skopeo copy docker://docker.io/postgres:15-alpine  docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/postgres:15-alpine 
         skopeo copy docker://docker.io/redis:6-alpine  docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/redis:6-alpine
         skopeo copy docker://docker.io/ubuntu/squid:latest  docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/ubuntu-squid:latest
         skopeo copy docker://docker.io/nginx:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/nginx:latest
