@@ -38,6 +38,8 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/kong/httpbin:0.2.3 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/httpbin:0.2.3
-         skopeo copy docker://registry.k8s.io/ubuntu-slim:0.14 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/ubuntu-slim:0.14
-         
+         #skopeo copy docker://docker.io/kong/httpbin:0.2.3 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/httpbin:0.2.3
+         #skopeo copy docker://registry.k8s.io/ubuntu-slim:0.14 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/ubuntu-slim:0.14
+          
+         skopeo copy docker://docker.io/langgenius/dify-api:1.0.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/langgenius/dify-api:1.0.0
+         skopeo copy docker://docker.io/langgenius/dify-web:1.0.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/langgenius/dify-web:1.0.0
