@@ -43,4 +43,4 @@ jobs:
         skopeo copy docker://docker.io/ubuntu/squid:latest  docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/ubuntu-squid:latest
         skopeo copy docker://docker.io/nginx:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/nginx:latest
         skopeo copy docker://docker.io/langgenius/dify-plugin-daemon:0.0.3-local docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-plugin-daemon:0.0.3-local
-        skopeo copy docker://docker.io/emitechnologies/weaviate:1.19.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/emitechnologies-weaviate:1.19.0
+        skopeo copy docker://docker.io/weaviate:1.19.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/emitechnologies-weaviate:1.19.0
