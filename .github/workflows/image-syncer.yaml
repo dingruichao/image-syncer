@@ -38,6 +38,7 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-        skopeo copy docker://docker.io/nginx:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/nginx:latest        
+        skopeo copy docker://docker.io/nginx:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/nginx:latest 
+        skopeo copy docker://docker.io/debian:bullseye-slim docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/debian:bullseye-slim
         skopeo copy docker://docker.io/mongodb/mongodb-community-server:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/mongodb-community-server:latest
 
