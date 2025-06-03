@@ -41,4 +41,7 @@ jobs:
         skopeo copy docker://docker.io/nginx:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/nginx:latest 
         skopeo copy docker://docker.io/debian:bullseye-slim docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/debian:bullseye-slim
         skopeo copy docker://docker.io/mongodb/mongodb-community-server:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/mongodb-community-server:latest
+        skopeo copy docker://docker.io/langgenius/dify-api:1.4.1 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-api:1.4.1
+        skopeo copy docker://docker.io/langgenius/dify-web:1.4.1 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/dify-web:1.4.1
+        
 
