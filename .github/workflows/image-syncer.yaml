@@ -42,5 +42,5 @@ jobs:
         skopeo copy docker://docker.io/debian:bullseye-slim docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/debian:bullseye-slim
         skopeo copy docker://docker.io/mongodb/mongodb-community-server:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/mongodb-community-server:latest
         # skopeo copy docker://docker.io/semitechnologies/weaviate:1.30.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/weaviate:1.30.0
-        skopeo copy docker://docker.io/tancloud/hertzbeat:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/hertzbeat:latest
+        skopeo copy docker://docker.io/apache/hertzbeat:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/apache-hertzbeat:latest
 
