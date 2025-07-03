@@ -42,5 +42,5 @@ jobs:
         skopeo copy docker://docker.io/debian:bullseye-slim docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/debian:bullseye-slim
         skopeo copy docker://docker.io/apache/hertzbeat-collector:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/apache-hertzbeat-collector:latest
         # skopeo copy docker://docker.io/semitechnologies/weaviate:1.30.0 docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/weaviate:1.30.0
-        skopeo copy docker://docker.io/apache/hertzbeat:latest docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/apache-hertzbeat:latest
+        skopeo copy docker://docker.io/python:3.12-slim-bookworm docker://${{ secrets.ALI_PERSONAL_DOCKER_REGISTRY_URL}}/lingding_cn/python:3.12-slim-bookworm
 
